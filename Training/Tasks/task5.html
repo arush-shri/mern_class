@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1><b><font color="blue">Registration Form</font></b></h1>
+        <form>
+            <table border="1">
+                <tr>
+                    <td><label for="fname"><b>First Name</b></label></td>
+                    <td>
+                        <input type="text" name="fname" id="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lname"><b>Last Name</b></label></td>
+                    <td>
+                        <input type="text" name="lname" id="lname" >
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email"><b>Email</b></label></td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="passwd"><b>Password</b></label></td>
+                    <td>
+                        <input type="password" name="passwd" id="passwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <b>Gender</b>
+                    </td>
+                    <td>
+                        <input type="radio" name="male" id="male" value="male">
+                        <label for="male">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="female" id="female" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age"><b>Age</b></label></td>
+                    <td>
+                        <input type="number" name="age" id="age">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phnum"><b>Phone Number</b></label></td>
+                    <td>
+                        <input type="number" name="phnum" id="phnum">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address"><b>Address</b></label></td>
+                    <td>
+                        <textarea rows="4" cols="37" name="address" id="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="state"><b>State</b></label></td>
+                    <td>
+                        <input type="text" name="state" id="state">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country"><b>Country</b></label></td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="AF">Afghanistan</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BR">Brazil</option>
+                            <option value="CA">Canada</option>
+                            <option value="CN">China</option>
+                            <option value="EG">Egypt</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                            <option value="IN">India</option>
+                            <option value="JP">Japan</option>
+                            <option value="MX">Mexico</option>
+                            <option value="RU">Russia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GB">United Kingdom</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="langs"><b>Languages known</b></label></td>
+                    <td>
+                        <input type="checkbox" name="langs" id="english" value="english">
+                        <label for="english">English</label>
+                        <input type="checkbox" name="langs" id="kannada" value="kannada">
+                        <label for="kannada">Kannada</label>
+                        <input type="checkbox" name="langs" id="hindi" value="hindi">
+                        <label for="hindi">Hindi</label>
+                        <input type="checkbox" name="langs" id="telugu" value="telugu">
+                        <label for="telugu">Telugu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="ack" id="ack">
+                        <label for="ack">I hereby declare all given details are true</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        Log in to <a href="https://careers.ethnus.com/candidateportal?source=career" target="_blank">Ethnus</a> website
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Register">
+        </form>
+        
+    </body>
+</html>

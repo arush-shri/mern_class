@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Task 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2>Vertical Nav Bar</h2>
+        <div class="vert_menu">
+            <a href="/">Home</a>
+            <a href="https://www.java.com/en/">Java</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            <a href="https://html.com/">HTML</a>
+            <a href="https://getbootstrap.com/">Bootstrap</a>
+        </div>
+        <br><br>
+        <h2>Horizontal Nav Bar</h2>
+        <div class="hori_menu">
+            <a href="/">Home</a>
+            <a href="https://www.java.com/en/" style="border-left: 3px solid blue;">Java</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" style="border-left: 3px solid blue;">CSS</a>
+            <a href="https://html.com/" style="border-left: 3px solid blue;">HTML</a>
+            <a href="https://getbootstrap.com/" style="border-left: 3px solid blue;">Bootstrap</a>
+        </div>
+    </body>
+    <style>
+        .vert_menu{
+            width: 200px;
+        }
+        .vert_menu a{
+            background-color: lightblue;
+            color: blue;
+            display: block;
+            text-decoration: none;
+            font-size: 25px;
+            padding-left: 5px;
+        }
+        .vert_menu a:hover{
+            background-color: #FFAA33;
+            color: white;
+        }
+        .hori_menu a{
+            background-color: #c7c7c7;
+            display: inline-block;
+            width: 130px;
+            height: 40px;
+            color: blue;
+            text-decoration: none;
+            font-size: 25px;
+            line-height: 40px;
+            text-align: center;
+            margin-left: -4px;
+        }
+        .hori_menu a:hover{
+            color: white;
+            background-color: #757474;
+        }
+    </style>
+</html>
