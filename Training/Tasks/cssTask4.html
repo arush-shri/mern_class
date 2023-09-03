@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Task 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="mainA">
+            <div class = "sideNav">
+                <a href="https://www.java.com/en/" id="firstA">Java</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" id="secA">CSS</a>
+                <a href="https://html.com/" id="thiA">HTML</a>
+                <a href="https://getbootstrap.com/" id="fourA">Bootstrap</a>
+            </div>
+            <div>
+                <h2 style="margin-top: 0px;">Hoverable Sidenav Buttons</h2>
+                <p>Hover over the buttons in the left side navigation to open them</p>
+            </div>
+        </div>
+    </body>
+    <style>
+        .mainA{
+            display: flex;
+        }
+        a{
+            display: block;
+            position: relative;
+            height: 52px;
+            font-size: 22px;
+            text-decoration: none;
+            line-height: 52px;
+            padding-left: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            width: 150px;
+            color: white;
+            margin-bottom: 5px;
+            left: -110px;
+            transition: 0.5s;
+            
+        }
+        a:hover{
+            left: -8px;
+        }
+        #firstA{
+            background-color: #04AA6D;
+        }
+        #secA{
+            background-color: #2196F3;
+        }
+        #thiA{
+            background-color: #f44336;
+        }
+        #fourA{
+            background-color: #555;
+        }
+    </style>
+</html>
