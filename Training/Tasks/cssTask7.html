@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Task 7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div style="background-color: #76203f; width: 50%;margin: 0 auto;margin-top: 50px;">
+            <div id="formBox">
+                <div id="labeled">
+                    <label for="name">Name:</label><br>
+                    <label for="Email">Email:</label><br>
+                    <label for="password">Password:</label><br>
+                    <label for="Phone">Phone Number:</label><br>
+                    <label>Gender:</label><br>
+                    <label>Gender:</label><br>
+                    <label for=zipC">Zip Code:</label><br>
+                    <label for="about">About:</label><br>
+                </div>
+                <div id="inputted">
+                    <input type="text" id="name" name="name" placeholder="your name"><br>
+                    <input type="email" name="Email" id="Email" placeholder="your email"><br>
+                    <input type="password" name="password"><br>
+                    <input type="number" name="Phone" id="Phone"><br>
+                    <label for="male" style="font-size: 18px;display: inline-block;">Male:</label>
+                    <input type="radio" name="Gender" id="male" value="male" style="display: inline-block;width: 15px;vertical-align: baseline;">
+                    <label for="female" style="font-size: 18px;display: inline-block;">Female:</label>
+                    <input type="radio" name="Gender" id="female" value="female" style="display: inline-block;width: 15px;">
+                    <label for="other" style="font-size: 18px;display: inline-block;">Other:</label>
+                    <input type="radio" name="Gender" id="other" value="other" style="display: inline-block;width: 15px;"><br>
+                    <select name="lang" id="lang" style="margin-top: 18px;height: 30px;">
+                        <option value="choice">Select Language</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                    </select><br>
+                    <input type="number" id="zipC" style="margin-top: 15px;"><br>
+                    <textarea rows="4" cols="37" name="about" id="about" placeholder="Write about yourself..."></textarea>
+                </div>
+            </div>
+            <div style="text-align: center;display: flexbox;margin: 0 auto;">
+                <button>Register</button>
+            </div>
+        </div>
+        
+    </body>
+    <style>
+        body{
+            background-color: #a22b55;
+        }
+        #formBox{
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        label{
+            color: whitesmoke;
+            display: block;
+            font-size: 22px;
+        }
+        input{
+            display: block;
+            height: 20px;
+        }
+        #labeled{
+            margin-top: 30px;
+        }
+        #inputted{
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        textarea{
+            width: 220px;
+            height: 50px;
+        }
+        button{
+            margin-top: 10px;
+            margin-bottom: 30px;
+            width: 440px;
+            height: 40px;
+            border-radius: 8px;
+            font-size: 20px;
+            color: #383333;
+            border: 0;
+        }
+    </style>
+</html>
