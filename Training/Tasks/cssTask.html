@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Task 6</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="imageHolder">
+            <img src="DPAvatar.jpg" alt="Avatar Picture">
+        </div>
+        <div style="text-align: center;">
+            <div style="display: flexbox;margin: 0 auto;" id="flexed">
+                <label for="username">Username</label><br>
+                <input type="text" placeholder="Enter Username"><br>
+                <label for="paswd">Password</label><br>
+                <input type="text" placeholder="Enter Password"><br>
+                <input type="submit" name="Login" id="login" value="Login" style="margin-top: 10px;color: white;background-color: #50ac54;border: 0;"><br>
+                <input type="checkbox" id="remember" style="width: 20px; float: left; height: 15px;margin-top: 13px;">
+                <label for="remember">Remember me</label><br>
+                <div id="cancel">
+                    <hr>
+                    <button style="float: left;">Cancel</button>
+                    <a href="" style="float: right;margin-right: 5px;margin-top: 10px;">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        img{
+            width: 230px;
+        }
+        .imageHolder{
+            text-align: center; 
+            padding-top: 10px;
+        }
+        input{
+            width: 350px;
+            height: 30px;
+            
+        }
+        label{
+            float: left;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #flexed{
+            width: 350px;
+        }
+        #cancel{
+            margin-top: 25px;
+            width: 350px;
+            height: 55px;
+            background-color: #bebebe;
+        }
+        #cancel button{
+            height: 35px;
+            width: 90px;
+            background-color: red;
+            border: 0;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+    </style>
+</html>
