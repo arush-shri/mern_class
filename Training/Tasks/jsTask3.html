@@ -19,24 +19,24 @@
                 <label for="secNum">2nd Number : </label>
                 <input type="number" id="secNum">
             </div>
-            <div>
+            <div style="margin-top: 10px;">
                 <button id="multiply" onclick="multiply()">Multiply</button>
                 <button id="divide" onclick="divide()">Divide</button>
             </div>
-            <p>The result is: </p><br>
-            
+            <p>The result is: </p>
+            <p id = "result"></p>
         </div>
     </body>
     <script>
-        var numFirst = document.getElementById("firstNum")
-        var numSec = document.getElementById("secNum")
         function multiply(){
-            return `<p>${numFirst * numSec}
-                </p>`
+            var numFirst = document.getElementById("firstNum").value
+            var numSec = document.getElementById("secNum").value
+            document.getElementById("result").innerHTML =  `<p>${numFirst * numSec}</p>`
         }
         function divide(){
-            return `<p>${numFirst / numSec}
-                </p>`
+            var numFirst = document.getElementById("firstNum").value
+            var numSec = document.getElementById("secNum").value
+            document.getElementById("result").innerHTML =  `<p>${numFirst / numSec}</p>`
         }
 
     </script>
