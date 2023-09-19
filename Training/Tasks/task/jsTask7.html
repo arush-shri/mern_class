@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Task 7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div style="padding-top: 25px;">
+            <div>
+                <img src="jsTask7train.jpg" alt="Train Pic", style="width: 18%;" id="train">
+            </div>
+            <div style="text-align: center;padding-top: 30px;">
+                <p style="color: blue;font-size: 26px;">Click the following buttons to handle animation</p>
+            </div>
+            <div style="text-align: center;">
+                <button id="startButton">Start</button>
+                <button id="stopButton">Stop</button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        let margin = 0;
+        const screenWidth = window.innerWidth;
+        const train = document.getElementById("train")
+        document.getElementById("startButton").onclick = function(){
+            const animationInterval = setInterval(function () {
+            if (margin < screenWidth - train.clientWidth) {
+                train.style.marginLeft = margin + "px";
+                console.log("qwerty");
+                margin += 2;
+            } else {clearInterval(animationInterval);train.style.marginLeft = 0 + "px";}
+            document.getElementById("stopButton").onclick = function() {
+                clearInterval(animationInterval);
+            }
+        }, 30);
+        }
+    </script>
+</html>
