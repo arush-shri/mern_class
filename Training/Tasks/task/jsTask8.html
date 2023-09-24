@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Task 8</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <div id="mainClass">
+            <p style="font-size: 36px;font-weight: bold;color: blue;margin-left: 50px;">Registration Form</p>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="fname">First Name</label><br>
+                </div>
+                <div class="col">
+                    <input type="text" id="fname"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="lname">Last Name</label><br>
+                </div>
+                <div class="col">
+                    <input type="text" id="lname"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="email">Email</label><br>
+                </div>
+                <div class="col">
+                    <input type="email" id="email"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="passwd">Password</label><br>
+                </div>
+                <div class="col">
+                    <input type="password" id="passwd"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="repass">Re-enter Password</label><br>
+                </div>
+                <div class="col">
+                    <input type="password" id="repass"><br>
+                </div>
+            </div>
+            <div class="row" style="text-align: left;">
+                <div class="col-md-3 pe-4" style="text-align: right;align-self: center;">
+                    <label for="gender">Gender</label><br>
+                </div>
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="genM" value="male">
+                        <label class="form-check-label" for="gender">Male</label>
+                    </div>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="genF" value="female">
+                        <label class="form-check-label" for="gender">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="age">Age</label><br>
+                </div>
+                <div class="col">
+                    <input type="text" id="age"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="phone">Phone Number</label><br>
+                </div>
+                <div class="col">
+                    <input type="number" id="phone"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;padding-right: 30px;align-self: center;">
+                    <label for="repass">Address</label><br>
+                </div>
+                <div class="col">
+                    <textarea name="add" id="address" cols="65" rows="3"></textarea><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;">
+                    <label for="state">State</label><br>
+                </div>
+                <div class="col">
+                    <input type="text" id="state"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: right;width: 10px;">
+                    <label for="country">Country</label><br>
+                </div>
+                <div class="col">
+                    <select name="country" id="country" style="width: 500px;">
+                        <option value="declare">Choose...</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BR">Brazil</option>
+                        <option value="CA">Canada</option>
+                        <option value="CN">China</option>
+                        <option value="EG">Egypt</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="IN">India</option>
+                        <option value="JP">Japan</option>
+                        <option value="MX">Mexico</option>
+                        <option value="RU">Russia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GB">United Kingdom</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" style="text-align: right;">
+                    <label for="lang">Langugae known</label><br>
+                </div>
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="eng" value="english">
+                        <label class="form-check-label" for="lang">English</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="kan" value="kannada">
+                        <label class="form-check-label" for="lang">Kannada</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="hindi" value="hindi">
+                        <label class="form-check-label" for="lang">Hindi</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="tel" value="telugu">
+                        <label class="form-check-label" for="lang">Telugu</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 ms-3">
+                <div class="col" style="text-align: left;">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="tel" value="telugu">
+                        <label class="form-check-label" for="gender">Hereby I declare all given details are true</label>        
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 ms-3">
+                <div class="col" style="text-align: right;">
+                    <p>Log in to <span><a href="#">Ethnus</a></span> website</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-danger" style="border-radius: 50px;width: 100px;">Register</button>
+        </div>
+    </body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to top, #c0a0ff, 	#c7869a, #fde282);
+        }
+        #mainClass{
+            text-align: center;
+        }
+        input{
+            margin-left: 20px;
+            width: 500px;
+            height: 20px;
+        }
+    </style>
+</html>
