@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Task 6</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to top left, #f9ce34, #ee2a7b, #6228d7);
+            }
+            #insta{
+                color: black;
+                padding-top: 10px;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 34px;
+            }
+            #mainClass{
+                display: flexbox;
+                background-color: White;
+                width: 400px;
+                text-align: center;
+                box-shadow: 0px 0px 8px black;
+            }
+            .btn{
+                font-size: 18px;
+                font-weight: 600;
+            }
+        </style>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <div style="display: flexbox;">
+            <div id="mainClass">
+                <p id="insta">Instagram</p>
+                <div class="input-group w-75 mx-auto">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Username" id="uName">
+                </div>
+                <div class="input-group w-75 mx-auto mt-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                        </svg>
+                    </span>
+                    <input type="password" class="form-control" placeholder="Password" id="passwd">
+                </div>
+                <button type="button" class="btn btn-primary w-75 mt-3" onclick="logIn()">Log in</button>
+                <div class="row w-75 mx-auto mt-3 pb-3">
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="remember" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="link-primary text-decoration-none" onclick="forgot()">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p style="color: white;">Don't have an account! 
+                    <span> 
+                        <a href="#" class="link-primary text-decoration-none" onclick="signUp()">Sign up here</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </body>
+    <script>
+        function logIn(){
+            const username = document.getElementById("uName").value
+            const password = document.getElementById("passwd").value
+            const remember = document.getElementById("flexCheckDefault")
+            console.log(`Username: ${username},\n Password: ${password}`)
+            if(remember.checked == true){
+                console.log("Remembered")
+            }
+            else{
+                console.log("Not remembered")
+            }
+        }
+        function forgot(){
+            console.log("Password Forgotten")
+        }
+        function signUp(){
+            console.log("Welcome new user")
+        }
+    </script>
+</html>
