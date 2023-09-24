@@ -71,7 +71,7 @@
                     <label for="age">Age</label><br>
                 </div>
                 <div class="col">
-                    <input type="text" id="age"><br>
+                    <input type="number" id="age"><br>
                 </div>
             </div>
             <div class="row">
@@ -154,7 +154,7 @@
             <div class="row mt-3 ms-3">
                 <div class="col" style="text-align: left;">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="tel" value="telugu">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="declare" value="declared">
                         <label class="form-check-label" for="gender">Hereby I declare all given details are true</label>        
                     </div>
                 </div>
@@ -164,7 +164,8 @@
                     <p>Log in to <span><a href="#">Ethnus</a></span> website</p>
                 </div>
             </div>
-            <button type="button" class="btn btn-danger" style="border-radius: 50px;width: 100px;">Register</button>
+            <button type="button" class="btn btn-danger" style="border-radius: 50px;width: 100px;" onclick="register()">Register</button>
+            <p class="mt-5" id="error"></p>
         </div>
     </body>
     <style>
@@ -185,4 +186,74 @@
             height: 20px;
         }
     </style>
+    <script>
+        function register(){
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var passwd = document.getElementById("passwd").value;
+            var repass = document.getElementById("repass").value;
+            var genM = document.getElementById("genM");
+            var genF = document.getElementById("genF");
+            var age = document.getElementById("age").value;
+            var phone = document.getElementById("phone").value;
+            var address = document.getElementById("address").value;
+            var state = document.getElementById("state").value;
+            var country = document.getElementById("country").value;
+            var eng = document.getElementById("eng");
+            var kan = document.getElementById("kan");
+            var hindi = document.getElementById("hindi");
+            var tel = document.getElementById("tel");
+            var declare = document.getElementById("declare");
+            var error = document.getElementById("error")
+            if(passwd == ""){
+                error.innerHTML = `<p style="color: red;font-size: 26px;">Please enter password</p>`
+            }
+            else if(repass == ""){
+                error.innerHTML = `<p style="color: red;font-size: 26px;">Please re-enter password</p>`
+            }
+            else if(passwd != repass){
+                error.innerHTML = `<p style="color: red;font-size: 26px;">Passwords don't match</p>`
+            }
+            else if(declare.checked == false){
+                error.innerHTML = `<p style="color: red;font-size: 26px;">Please check the declaration</p>`
+            }
+            else{
+                console.log(fname)
+                console.log(lname)
+                console.log(email)
+                console.log(passwd)
+                if(genM.checked){
+                    console.log(genM.value)
+                }
+                else if(genF.checked){
+                    console.log(genF.value)
+                }
+                else{
+                    error.innerHTML = `<p style="color: red;font-size: 26px;">Please select a gender</p>`
+                }
+                console.log(age)
+                console.log(phone)
+                console.log(address)
+                console.log(state)
+                console.log(country)
+                if(eng.checked){
+                    console.log(eng.value)
+                    error.innerHTML = `<p></p>`
+                }
+                if(kan.checked){
+                    console.log(kan.value)
+                    error.innerHTML = `<p></p>`
+                }
+                if(hindi.checked){
+                    console.log(hindi.value)
+                    error.innerHTML = `<p></p>`
+                }
+                if(tel.checked){
+                    console.log(tel.value)
+                    error.innerHTML = `<p></p>`
+                }
+            }
+        }
+    </script>
 </html>
