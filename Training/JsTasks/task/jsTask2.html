@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript Task 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h3>Input a string</h3>
+        <input type="text" id="input" oninput="lex()">
+        <h3 id="answer"></h3>
+    </body>
+    <script>
+        function lex(){
+            let input = document.getElementById("input").value
+            let answer = input.split("").sort().join("")
+            document.getElementById("answer").innerHTML = `<h3>${answer}</h3>`
+            return answer
+        }
+    </script>
+</html>

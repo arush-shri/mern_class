@@ -7,7 +7,6 @@ const body = document.querySelector('body');
                   if (nameIn.value === ""){
                     nameIn.style.borderColor = "red"
                     document.getElementById("nameAlert").innerHTML = "This field is required"
-                    console.log(nameIn.value)
                   }
                   else {
                     nameIn.style.borderColor = "black"
@@ -19,7 +18,6 @@ const body = document.querySelector('body');
                   if (emailIn.value === ""){
                     emailIn.style.borderColor = "red"
                     document.getElementById("emailAlert").innerHTML = "A valid email is required"
-                    console.log(nameIn.value)
                   }
                   else {
                     emailIn.style.borderColor = "black"
