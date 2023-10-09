@@ -1,0 +1,11 @@
+.navbar .nav-link{
+    text-decoration: none;
+    color: white;
+    font-size:medium ;
+}
+.navbar_light{
+    background-color: #4c3fda;
+}
+.navbar_dark{
+    background-color: #672795;
+}
