@@ -2,6 +2,12 @@
   height: 100vh;
   width: 100vw;
 }
+.app_light{
+  background-color: #fa7898;
+}
+.app_dark{
+  background-color: #22163c;
+}
 
 .App-logo {
   height: 40vmin;

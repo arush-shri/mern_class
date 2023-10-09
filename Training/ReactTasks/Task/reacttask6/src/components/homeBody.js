@@ -1,9 +1,5 @@
 export default function Home({theme}){
     return(
-        <body>
-            <div>
-                <p>{theme}</p>
-            </div>
-        </body>
+        <div className='d-flex'>{theme}</div>
     )
 }
