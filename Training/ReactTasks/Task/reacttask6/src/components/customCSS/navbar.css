@@ -1,7 +1,7 @@
 .navbar .nav-link{
     text-decoration: none;
     color: white;
-    font-size:medium ;
+    font-size:large ;
 }
 .navbar_light{
     background-color: #4c3fda;
@@ -14,4 +14,23 @@
 }
 .navbar_dark .nav-link:hover{
     color: #54a8f6;
+}
+.navbar .NavDropdown{
+    background-color: red;
+}
+.heightInc{
+    height: 9vh;
+}
+.navbar .drop_light{
+    background-color: #db5df1;
+}
+.navbar .drop_light .dropdown-item:hover{
+    background-color: #c45ebd;
+}
+.navbar .drop_dark{
+    background-color: #660dc5;
+}
+.navbar .drop_dark .dropdown-item:hover{
+    background-color: #521197;
+    color: white;
 }

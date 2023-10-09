@@ -6,16 +6,21 @@ export default function NavBar({mode, setMode}){
     
     return(
         <div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center heightInc'>
                 <nav className={`navbar navbar-expand-lg navbar_${mode} rounded-pill w-75 mt-3`}>
                     <div className='collapse navbar-collapse row justify-content-between'>
                         <div className="ms-4 d-flex justify-content-between col-6">
                             <a className={`nav-link active ${mode}`} href={() => {}}>
                                 Arush Shrivastava
                             </a>
-                            <a className={`nav-link ${mode}`} href={() => {}}>
-                                Projects
-                            </a>
+                            <div className='nav-item dropdown'>
+                                <a className={`nav-link ${mode} dropdown-toggle`} role="button" id="Dropdown" data-bs-toggle="dropdown" aria-expanded="false" href={() => {}}>Projects</a>
+                                <div className={`dropdown-menu drop_${mode}`} aria-labelledby="Dropdown">
+                                    <a className="dropdown-item" href={() => {}}>a</a>
+                                    <hr class="dropdown-divider"></hr>
+                                    <a className="dropdown-item" href={() => {}}>a</a>
+                                </div>
+                            </div>
                             <a className={`nav-link ${mode}`} href={() => {}}>
                                 Certificates
                             </a>
