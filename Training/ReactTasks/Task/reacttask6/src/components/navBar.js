@@ -51,9 +51,6 @@ export default function NavBar({mode, setMode}){
                     </div>
                 </nav>
             </div>
-            <div>
-                <Home theme={mode}/>
-            </div>
         </div>
     )
 }

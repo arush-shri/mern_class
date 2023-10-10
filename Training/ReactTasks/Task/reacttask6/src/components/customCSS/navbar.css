@@ -26,6 +26,7 @@
 }
 .navbar .drop_light .dropdown-item:hover{
     background-color: #c45ebd;
+    color: white;
 }
 .navbar .drop_dark{
     background-color: #660dc5;
