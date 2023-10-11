@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'lexendMed';
+    src: local('lexendMed'),
+    url('../src/font/lexend_medium.woff') format('woff')
+}
+@font-face {
+    font-family: 'lexendReg';
+    src: local('lexendReg'),
+    url('../src/font/lexend_regular.woff') format('woff')
+}

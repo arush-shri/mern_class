@@ -22,7 +22,7 @@ export default function NavBar({mode, setMode, sideBar, openSideBar}){
       const atagSize = windowWidth <= 1200 ? `container-fluid ms-4` :`ms-4 `
     return(
         <div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center' style={{ fontFamily: 'lexendMed' }}>
                 <nav className={`navbar navbar-expand navbar_${mode} ${navSize}`}>
                     <a className={`${atagSize} nav-link active`} href={() => {}}>
                         Arush Shrivastava
@@ -76,7 +76,7 @@ export default function NavBar({mode, setMode, sideBar, openSideBar}){
 
 export function SideBar({mode, setMode}) {
   return (
-    <div className="position-fixed" style={{ top: 0, bottom: 0, height: '100%', zIndex: 1 }}>
+    <div className="position-fixed" style={{ top: 0, bottom: 0, height: '100%', zIndex: 1, fontFamily:'lexendMed' }}>
       <nav id="sidebarMenu" className={`collapse d-block sidebar collapse sideBarColor${mode}`}>
         <div className="position-sticky">
             <div className="list-group list-group-flush mx-3 ">
