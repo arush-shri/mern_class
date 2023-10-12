@@ -23,7 +23,7 @@ export default function Home({theme}){
     }, [lineIndex, charIndex]);
     return(
         <div className={`d-flex flex-column mt-4 mainCol body${theme} align-items-center w-100`} style={{ fontFamily: 'lexendReg'}}>
-            <div class="typing-text row w-75">
+            <div class="typing-text row">
             <div className='d-flex flex-column w-50 h-50 justify-content-center'>
                 {lines.map((line, index) => (
                     <p key={index} style={{ visibility: index <= lineIndex ? 'visible' : 'hidden' }}>

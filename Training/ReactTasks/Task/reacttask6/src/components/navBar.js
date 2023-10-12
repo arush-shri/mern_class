@@ -1,5 +1,6 @@
 import './customCSS/navbar.css'
 import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle';
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import ListIcon from './customIcon/list';
 
@@ -24,36 +25,36 @@ export default function NavBar({mode, setMode, sideBar, openSideBar}){
         <div>
             <div className='d-flex justify-content-center' style={{ fontFamily: 'lexendMed' }}>
                 <nav className={`navbar navbar-expand navbar_${mode} ${navSize}`}>
-                    <a className={`${atagSize} nav-link active`} href={() => {}}>
+                    <Link className={`${atagSize} nav-link active`} to="/">
                         Arush Shrivastava
-                    </a>
+                    </Link>
                     <div className='d-xl-none container-fluid justify-content-end align-items-center'>
                         <ListIcon onClick={menuOpener}/>
                     </div>
                     <div className='ms-5 collapse navbar-collapse row justify-content-between'>
                         <div className="d-flex justify-content-between col-5 d-none d-xl-flex">
                             <div className='nav-item dropdown'>
-                                <a className={`nav-link dropdown-toggle`} role="button" id="Dropdown" data-bs-toggle="dropdown" aria-expanded="false" href={() => {}}>Projects</a>
+                                <Link className={`nav-link dropdown-toggle`} role="button" id="Dropdown" data-bs-toggle="dropdown" aria-expanded="false" to="/projects">Projects</Link>
                                 <div className={`dropdown-menu drop_${mode}`} aria-labelledby="Dropdown">
-                                    <a className="dropdown-item" href={() => {}}>a</a>
+                                    <Link className="dropdown-item" href={() => {}}>a</Link>
                                     <hr class="dropdown-divider"></hr>
-                                    <a className="dropdown-item" href={() => {}}>a</a>
+                                    <Link className="dropdown-item" href={() => {}}>a</Link>
                                 </div>
                             </div>
-                            <a className={`nav-link`} href={() => {}}>
+                            <Link className={`nav-link`} to='/certificate'>
                                 Certificates
-                            </a>
-                            <a className={`nav-link`} href={() => {}}>
-                                Skills
-                            </a>
+                            </Link>
+                            <Link className={`nav-link`} to='/about    '>
+                                About
+                            </Link>
                         </div>
                         <div className="d-flex justify-content-between col-4 me-4 d-none d-xl-flex">
-                            <a className={`nav-link`} href={() => {}}>
+                            <Link className={`nav-link`} to="/social">
                                 Social
-                            </a>
-                            <a className={`nav-link`} href={() => {}}>
+                            </Link>
+                            <Link className={`nav-link`} to="/contact">
                                 Contact
-                            </a>
+                            </Link>
                             <DarkModeToggle mode={mode}
                                 size="sm" 
                                 inactiveTrackColor='#3457D5'
@@ -80,29 +81,29 @@ export function SideBar({mode, setMode}) {
       <nav id="sidebarMenu" className={`collapse d-block sidebar collapse sideBarColor${mode}`}>
         <div className="position-sticky">
             <div className="list-group list-group-flush mx-3 ">
-                <a href="#" className="list-group-item list-group-item-action py-3 ripple" style={{fontSize:'large'}}>
+                <Link to='/' className="list-group-item list-group-item-action py-3 ripple" style={{fontSize:'large'}}>
                 <i className="fas fa-tachometer-alt fa-fw"></i><span>Arush Shrivastava</span>
-                </a>
+                </Link>
                 <div className='list-group-item list-group-item-action py-3 ripple'>
                     <a className={`nav-link ${mode} dropdown-toggle`} role="button" id="Dropdown" data-bs-toggle="dropdown" aria-expanded="false" href={() => {}}>Projects</a>
                     <div className={`dropdown-menu drop_${mode}`} aria-labelledby="Dropdown">
-                        <a className="dropdown-item" href={() => {}}>a</a>
+                        <Link className="dropdown-item" href={() => {}}>a</Link>
                         <hr class="dropdown-divider"></hr>
-                        <a className="dropdown-item" href={() => {}}>a</a>
+                        <Link className="dropdown-item" href={() => {}}>a</Link>
                     </div>
                 </div>
-                <a className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
+                <Link to='/certificate' className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
                     Certificates
-                </a>
-                <a className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
-                    Skills
-                </a>
-                <a className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
+                </Link>
+                <Link to='/about' className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
+                    About
+                </Link>
+                <Link to='/social' className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
                     Social
-                </a>
-                <a className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
+                </Link>
+                <Link to='/contact' className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
                     Contact
-                </a>
+                </Link>
                 <div className='list-group-item list-group-item-action py-2 ripple'>
                     <DarkModeToggle mode={mode}
                         size="sm" 

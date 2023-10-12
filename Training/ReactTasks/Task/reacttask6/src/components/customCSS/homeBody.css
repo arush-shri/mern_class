@@ -11,6 +11,9 @@
 .mainCol {
     height: 85%;
 }
+.typing-text{
+    width: 75%;
+}
 @media (max-width: 1000px) {
     .d-flex p {
       font-size: 38px;
@@ -20,6 +23,9 @@
 @media (max-width: 768px) {
     .d-flex p {
       font-size: 32px;
+    }
+    .typing-text{
+        width: 100%;
     }
 }
 
