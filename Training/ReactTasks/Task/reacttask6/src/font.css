@@ -8,3 +8,8 @@
     src: local('lexendReg'),
     url('../src/font/lexend_regular.woff') format('woff')
 }
+@font-face {
+    font-family: 'lexendLig';
+    src: local('lexendLig'),
+    url('../src/font/lexend_light.woff') format('woff')
+}
