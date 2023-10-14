@@ -9,7 +9,6 @@ import Home from './components/pages/homeBody';
 import Projects from './components/pages/projects';
 import Contact from './components/pages/contact';
 import Certificate from './components/pages/certificates';
-import Social from './components/pages/social';
 import About from './components/pages/about';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
         <Route path='/project' element={<Projects theme={mode} />}/>
         <Route path='/certificate' element={< Certificate mode={mode} />}/>
         <Route path='/about' element={<About theme={mode} />}/>
-        <Route path='/social' element={<Social theme={mode} />}/>
         <Route path='/contact' element={<Contact theme={mode} />}/>
       </Routes>
     </div>

@@ -32,7 +32,7 @@ export default function NavBar({mode, setMode, sideBar, openSideBar}){
                         <ListIcon onClick={menuOpener}/>
                     </div>
                     <div className='ms-5 collapse navbar-collapse row justify-content-between'>
-                        <div className="d-flex justify-content-between col-5 d-none d-xl-flex">
+                        <div className="d-flex justify-content-between col-4 d-none d-xl-flex">
                             <div className='nav-item dropdown'>
                                 <Link className={`nav-link dropdown-toggle`} role="button" id="Dropdown" data-bs-toggle="dropdown" aria-expanded="false" to="/projects">Projects</Link>
                                 <div className={`dropdown-menu drop_${mode}`} aria-labelledby="Dropdown">
@@ -44,13 +44,10 @@ export default function NavBar({mode, setMode, sideBar, openSideBar}){
                             <Link className={`nav-link`} to='/certificate'>
                                 Certificates
                             </Link>
-                            <Link className={`nav-link`} to='/about    '>
-                                About
-                            </Link>
                         </div>
                         <div className="d-flex justify-content-between col-4 me-4 d-none d-xl-flex">
-                            <Link className={`nav-link`} to="/social">
-                                Social
+                            <Link className={`nav-link`} to='/about    '>
+                                About
                             </Link>
                             <Link className={`nav-link`} to="/contact">
                                 Contact
@@ -97,9 +94,6 @@ export function SideBar({mode, setMode}) {
                 </Link>
                 <Link to='/about' className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
                     About
-                </Link>
-                <Link to='/social' className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
-                    Social
                 </Link>
                 <Link to='/contact' className={`nav-link ${mode} list-group-item list-group-item-action py-3 ripple`} href={() => {}}>
                     Contact
